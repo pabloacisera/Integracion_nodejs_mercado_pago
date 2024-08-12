@@ -17,11 +17,11 @@ export const crearPago = async (req, res) => {
                }
             ],
             back_urls: {
-               success: 'http://localhost:3000/pay/success',
-               failure: 'http://localhost:3000/pay/failure',
-               pending: 'http://localhost:3000/pay/pending'
+               success: 'https://integracion-nodejs-mercado-pago.onrender.com/pay/success',
+               failure: 'https://integracion-nodejs-mercado-pago.onrender.com/pay/failure',
+               pending: 'https://integracion-nodejs-mercado-pago.onrender.com/pay/pending'
             },
-            notification_url: 'https://a0cb-200-107-100-9.ngrok-free.app/pay/webhook',
+            notification_url: 'https://integracion-nodejs-mercado-pago.onrender.com/pay/webhook',
             auto_return: 'approved',
             use_points_for_discount: true,
             external_reference: 'ref-123456789'
